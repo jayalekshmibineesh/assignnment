@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+   <!-- <p id="p1"> click to dis appear</p>  -->
+   <input type="text" id="input"><br>
+Name:   <input type="text" name ="FUlllname"><br>
+Email<input type="text" name="email">
+</body>
+<script>
+    $(document).ready(function(){
+       /* $("#p1").dblclick(function(){
+            $(this).hide();
+        });*/
+       // $("#p1").mouseenter(function(){
+//alert("enter the text!");
+
+    // });
+    // $("#p1").mouseleave(function(){
+    //    alert("leave the text!");
+     //});
+    // $("#p1").mousedown(function(){
+        //alert(" Mousedown over p1!");
+     //});
+     ////$("#p1").hover(function(){
+        //alert(" mouse hover onP1 ");
+    //});
+  /*  $("input").keydown(function(){
+$("input").css("background-color","green");
+    });
+    $("input").keyup(function(){
+        $("input").css("background-color","blue");
+    });*/
+    $("input").focus(function(){
+        $(this).css("background-color","violet");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color","pink");
+    });
+    });
+
+</script>
+</html>

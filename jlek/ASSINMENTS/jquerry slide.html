@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<style>
+    #p1,#f1
+    {
+padding: 5px;
+text-align: center;
+background-color: yellow;
+border: solid 1px green;
+    }
+    #p1
+    {
+      background-color: red;  
+      padding :50px;
+      display: none;
+    }
+    
+</style>
+<body>
+    <div id="f1"> clickto slide down panel</div>
+    <div id ="p1"> welcome</div>
+    
+</body>
+<script>
+    $(document).ready(function(){
+
+        $("#f1").click(function(){
+            $("#p1").slideDown(2000);
+            $("#p1").slideUp(2000);
+            $("#p1").slideToggle("slow");
+        });
+    } );
+</script>
+</html>

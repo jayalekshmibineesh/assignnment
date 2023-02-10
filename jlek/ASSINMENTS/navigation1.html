@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(25, 92, 34);
+    }
+    
+    li {
+        float: left;
+    }
+    li a.active{
+
+ background-color: green;
+        color: yellowgreen;
+    }
+    
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: green;
+        color: yellowgreen;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:green;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: green}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?73c27e26f610eb3c9f3feb0c75b03925";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+<body>
+    <ul>
+        <li><a class="active "href="#home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">products</a>
+          <div class="dropdown-content">
+            <a href="#">Engineering</a>
+            <a href="#">Telecom</a>
+            <a href="#">Energy</a>
+            <a href="#"> Finance</a>
+            <a href="#"> Consultancy</a>
+          </div>
+          <a href="services">Services</a>
+          <a href="contact">Contact</a>
+        </li>
+      </ul>
+       
+</body>
+</html>

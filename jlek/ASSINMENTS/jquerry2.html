@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="hide">hide</button>
+    <button id="show"> show</button>
+    <button id="toggle"> toggle</button>
+    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"  id = "img" alt="">
+</body>
+<script>
+    $ (document).ready(function()
+    {
+        $("#hide").click(function()
+        
+        { 
+            $("#img").hide(2000);
+
+        });
+        $("#show").click(function(){
+            $ ("#img").show(2000);
+        });
+
+        $ ("#toggle").click(function(){
+           
+            $("#img").toggle(2000);
+        });
+            
+        });
+    
+</script>
+</html>
